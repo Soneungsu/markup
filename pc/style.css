@@ -3,7 +3,7 @@
 .header {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #cccccc;
   background-color: #fff;
   padding: 20px 26px;
   height: 64px;
@@ -15,6 +15,9 @@
     cursor: pointer;
   }
 }
+.section_inner {
+  display: flex;
+}
 .nav_items {
   width: 240px;
   height: 1791px;
@@ -22,8 +25,7 @@
   border: 1px solid #cccccc;
 }
 
-.list dt > a,
-.list dd > a {
+.list li > a {
   display: block;
   background-image: url(../image/css_sprites.png);
 }
@@ -58,27 +60,74 @@
   width: 31px;
   height: 17px;
   background-position: -10px -158px;
+  margin-bottom: 20px;
 }
 
 .list .item_no1 {
   width: 85px;
   height: 15px;
   background-position: -131px -10px;
+  margin-bottom: 12px;
+  margin-left: 36px;
 }
 .list .item_no2 {
   width: 59px;
   height: 15px;
   background-position: -10px -123px;
+  margin-bottom: 12px;
+  margin-left: 36px;
 }
 .list .item_no3 {
   width: 100px;
   height: 15px;
   background-position: -10px -88px;
+  margin-bottom: 12px;
+  margin-left: 36px;
 }
 .list .item_no4 {
   width: 72px;
   height: 15px;
   background-position: -131px -45px;
+  margin-bottom: 12px;
+  margin-left: 36px;
+}
+
+main {
+  padding: 0 58px 0 36px;
+  width: 100%;
+}
+
+#category_img {
+  margin-top: 44px;
+  margin-bottom: 16px;
+}
+.content_article {
+  width: 944px;
+  border: 1px solid #a6a8ab;
+}
+.list_tab {
+  display: flex;
+  justify-content: center;
+}
+
+.list_tab li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list_tab li:first-child {
+  border-right: 1px solid black;
+}
+.list_blog li {
+  padding: 40px 30px;
+  background-color: #fff;
+}
+.list_blog li:first-child {
+  margin-top: 0;
+}
+a {
+  display: flex;
 }
 
 footer {
