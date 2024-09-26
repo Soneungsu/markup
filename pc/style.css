@@ -22,46 +22,63 @@
   border: 1px solid #cccccc;
 }
 
-/* .list dt > a,
+.list dt > a,
 .list dd > a {
   display: block;
-  background-image: ;
-} */
+  background-image: url(../image/css_sprites.png);
+}
 
-.category::after {
+.list .category {
   width: 101px;
   height: 21px;
   background-position: -10px -10px;
   margin: 46px 20px 26px;
-  background-image: url(../image/css_sprites.png);
 }
 
-.blog::after {
+.list .blog {
   width: 96px;
   height: 17px;
   background-position: -10px -51px;
   margin-left: 22px;
   margin-right: 134px;
   margin-bottom: 12px;
-  background-image: url(../image/css_sprites.png);
 }
 
-.story::after {
+.list .story {
   width: 67px;
   height: 15px;
-  background-position: -10px -88px;
+  background-position: -131px -80px;
   margin-left: 36px;
   margin-right: 134px;
-  background-image: url(../image/css_sprites.png);
 }
 
-.tag::after {
+.list .tag {
   margin-top: 64px;
   margin-left: 20px;
   width: 31px;
   height: 17px;
-  background-position: -130px -45px;
-  background-image: url(../image/css_sprites_tag.png);
+  background-position: -10px -158px;
+}
+
+.list .item_no1 {
+  width: 85px;
+  height: 15px;
+  background-position: -131px -10px;
+}
+.list .item_no2 {
+  width: 59px;
+  height: 15px;
+  background-position: -10px -123px;
+}
+.list .item_no3 {
+  width: 100px;
+  height: 15px;
+  background-position: -10px -88px;
+}
+.list .item_no4 {
+  width: 72px;
+  height: 15px;
+  background-position: -131px -45px;
 }
 
 footer {
