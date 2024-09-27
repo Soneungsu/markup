@@ -192,43 +192,18 @@ strong {
 .tag_wrap .txt.issue {
   background-color: #a37a7b;
 }
-
-.section_story {
-  display: none;
-}
-.list_story {
-  display: flex;
-  flex-wrap: wrap;
-}
-.list_best {
-  overflow: hidden;
-}
-
 .list_story li:first-child {
-  display: block;
+  float: left;
   width: 50%;
-  height: 320px;
 }
 
-.list_story li:not(:first-of-type) {
+.list_story li:nth-child(n + 2) {
+  float: right;
   width: 25%;
-  height: 160px;
 }
-
 .best_img {
-  display: block;
   width: 100%;
 }
-
-.new_content {
-  float: right;
-}
-
-.ranking_content {
-  float: left;
-}
-
-/*  */
 footer {
   height: 50px;
   background-color: #f1f1f1;
