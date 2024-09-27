@@ -147,6 +147,18 @@ strong {
   margin-bottom: 54px;
 }
 
+.tag_wrap span {
+  border: none;
+  padding: ;
+  background-color: #b3b6bb;
+  color: #ffffff;
+  border-radius: 2px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  font-weight: bold;
+  font-family: "Apple SD Gothic Neo";
+}
+
 footer {
   height: 50px;
   background-color: #f1f1f1;
