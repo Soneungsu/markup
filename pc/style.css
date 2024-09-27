@@ -1,5 +1,9 @@
 @import url(../reset.css);
 
+#wrapper {
+  background: #f9f9f9;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -122,12 +126,19 @@ main {
 .list_blog li {
   padding: 40px 30px;
   background-color: #fff;
+  border-bottom: 2px solid #efeef2;
+  margin-top: 10px;
 }
+
 .list_blog li:first-child {
   margin-top: 0;
 }
 a {
   display: flex;
+}
+
+.section_blog {
+  padding: 0 16px;
 }
 
 .description_wrap {
@@ -149,7 +160,8 @@ strong {
 
 .tag_wrap span {
   border: none;
-  padding: ;
+  line-height: 24px;
+  padding: 3px 6px;
   background-color: #b3b6bb;
   color: #ffffff;
   border-radius: 2px;
