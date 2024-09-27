@@ -3,20 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
   </head>
   <body>
     <div id="wrapper">
-      <header class="header" role="banner">
-        <h1>
-          <img
-            src="../image/dktechin_Logo_Small.jpg"
-            alt="dktechin logo"
-            id="dkt_logo"
-          />
-        </h1>
-      </header>
+      <!-- 헤더 및 푸터는 화면 로드 시 자동으로 노출 제이쿼리 cdn 사용함 -->
+      <header class="header" role="banner"></header>
       <section class="section_inner">
         <aside class="nav_items">
           <nav class="nav_list_items">
@@ -42,7 +38,7 @@
           </h2>
           <article class="content_article">
             <ul class="list_tab">
-              <li class="on">
+              <li class="tab active">
                 <a href="#" class="link_tab">
                   <img
                     src="../image/blog_tab.jpeg"
@@ -51,7 +47,7 @@
                   />
                 </a>
               </li>
-              <li>
+              <li class="tab">
                 <a href="#" class="link_tab">
                   <img
                     src="../image/story_tab.jpeg"
@@ -62,7 +58,7 @@
               </li>
             </ul>
             <div class="wrap_category">
-              <div class="section_blog on">
+              <div class="section_pane active">
                 <ul class="list_blog">
                   <li>
                     <a href="#">
@@ -84,10 +80,9 @@
                           <span>blog2010 | 키미</span>
                         </div>
                         <div class="tag_wrap">
-                          <span>#국내여행블로그</span>
-                          <span>#100만방문자</span>
-                          <span>#9년차블로그</span>
-                          <span>#상위1%부지러너</span>
+                          <span class="txt">#국내여행블로그</span>
+                          <span class="txt">#100만방문자</span>
+                          <span class="txt">#9년차블로그</span>
                         </div>
                       </div>
                     </a>
@@ -112,10 +107,40 @@
                           <span>blog2010 | 키미</span>
                         </div>
                         <div class="tag_wrap">
-                          <span>#국내여행블로그</span>
-                          <span>#100만방문자</span>
-                          <span>#9년차블로그</span>
-                          <span>#상위1%부지러너</span>
+                          <span class="txt">#국내여행블로그</span>
+                          <span class="txt">#100만방문자</span>
+                          <span class="txt">#9년차블로그</span>
+                          <span class="txt runner">#상위1%부지러너</span>
+                          <span class="txt comment">#상위1%댓글부자</span>
+                          <span class="txt review">#친절한답글러</span>
+                          <span class="txt issue">#10월이슈포스트</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div>
+                        <img
+                          src="../blogimg/blog1.jpg"
+                          alt="한 달에 5개 이상 포스팅할 정도면.. 블로그 좀 하시는
+                        군요?"
+                          width="240px"
+                          height="172px"
+                        />
+                      </div>
+                      <div class="description_wrap">
+                        <strong>
+                          한 달에 5개 이상 포스팅할 정도면.. 블로그 좀 하시는
+                          군요?</strong
+                        >
+                        <div class="blog">
+                          <span>blog2010 | 키미</span>
+                        </div>
+                        <div class="tag_wrap">
+                          <span class="txt">#국내여행블로그</span>
+                          <span class="txt">#100만방문자</span>
+                          <span class="txt">#9년차블로그</span>
                         </div>
                       </div>
                     </a>
@@ -167,9 +192,10 @@
                           <span>blog2010 | 키미</span>
                         </div>
                         <div class="tag_wrap">
-                          <span>#국내여행블로그</span>
-                          <span>#100만방문자</span>
-                          <span>#9년차블로그</span>
+                          <span class="txt">#국내여행블로그</span>
+                          <span class="txt">#100만방문자</span>
+                          <span class="txt">#9년차블로그</span>
+                          <span class="txt issue">#10월이슈포스트</span>
                         </div>
                       </div>
                     </a>
@@ -194,10 +220,9 @@
                           <span>blog2010 | 키미</span>
                         </div>
                         <div class="tag_wrap">
-                          <span>#국내여행블로그</span>
-                          <span>#100만방문자</span>
-                          <span>#9년차블로그</span>
-                          <span>#10월이슈포스트</span>
+                          <span class="txt">#국내여행블로그</span>
+                          <span class="txt">#100만방문자</span>
+                          <span class="txt">#9년차블로그</span>
                         </div>
                       </div>
                     </a>
@@ -222,9 +247,9 @@
                           <span>blog2010 | 키미</span>
                         </div>
                         <div class="tag_wrap">
-                          <span>#국내여행블로그</span>
-                          <span>#100만방문자</span>
-                          <span>#9년차블로그</span>
+                          <span class="txt">#국내여행블로그</span>
+                          <span class="txt">#100만방문자</span>
+                          <span class="txt">#9년차블로그</span>
                         </div>
                       </div>
                     </a>
@@ -249,52 +274,94 @@
                           <span>blog2010 | 키미</span>
                         </div>
                         <div class="tag_wrap">
-                          <span>#국내여행블로그</span>
-                          <span>#100만방문자</span>
-                          <span>#9년차블로그</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div>
-                        <img
-                          src="../blogimg/blog1.jpg"
-                          alt="한 달에 5개 이상 포스팅할 정도면.. 블로그 좀 하시는
-                        군요?"
-                          width="240px"
-                          height="172px"
-                        />
-                      </div>
-                      <div class="description_wrap">
-                        <strong>
-                          한 달에 5개 이상 포스팅할 정도면.. 블로그 좀 하시는
-                          군요?</strong
-                        >
-                        <div class="blog">
-                          <span>blog2010 | 키미</span>
-                        </div>
-                        <div class="tag_wrap">
-                          <span>#국내여행블로그</span>
-                          <span>#100만방문자</span>
-                          <span>#9년차블로그</span>
-                          <span>#상위1%부지러너</span>
-                          <span>#친절한답글러</span>
+                          <span class="txt">#국내여행블로그</span>
+                          <span class="txt">#100만방문자</span>
+                          <span class="txt">#9년차블로그</span>
+                          <span class="txt runner">#상위1%부지러너</span>
+                          <span class="txt review">#친절한답글러</span>
                         </div>
                       </div>
                     </a>
                   </li>
                 </ul>
               </div>
+              <div class="section_pane">
+                <div class="best_cont">
+                  <h2>BEST</h2>
+                  <ul class="list_story">
+                    <li class="list_best">
+                      <a href="#">
+                        <img
+                          src="../blogimg/blog1.jpg"
+                          alt=""
+                          class="best_img"
+                        />
+                        <p></p>
+                      </a>
+                    </li>
+                    <li class="list_best">
+                      <a href="#">
+                        <img
+                          src="../blogimg/blog1.jpg"
+                          alt=""
+                          class="best_img"
+                        />
+                        <p></p>
+                      </a>
+                    </li>
+                    <li class="list_best">
+                      <a href="#">
+                        <img
+                          src="../blogimg/blog1.jpg"
+                          alt=""
+                          class="best_img"
+                        />
+                        <p></p>
+                      </a>
+                    </li>
+                    <li class="list_best">
+                      <a href="#">
+                        <img
+                          src="../blogimg/blog1.jpg"
+                          alt=""
+                          class="best_img"
+                        />
+                        <p></p>
+                      </a>
+                    </li>
+                    <li class="list_best">
+                      <a href="#">
+                        <img
+                          src="../blogimg/blog1.jpg"
+                          alt=""
+                          class="best_img"
+                        />
+                        <p></p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="new_content">
+                  <h2>BEST</h2>
+                  <ul></ul>
+                </div>
+                <div class="ranking_content">
+                  <h2>BEST</h2>
+                  <ul></ul>
+                </div>
+              </div>
             </div>
           </article>
         </main>
       </section>
 
-      <footer>
-        <p>Copyright (c) dk techin All rights reserved.</p>
-      </footer>
+      <footer></footer>
     </div>
+    <script>
+      $(() => {
+        $("header").load("../include/header.html");
+        $("footer").load("../include/footer.html");
+      });
+    </script>
   </body>
 </html>
