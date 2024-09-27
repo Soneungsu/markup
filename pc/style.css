@@ -130,6 +130,23 @@ a {
   display: flex;
 }
 
+.description_wrap {
+  padding: 26px 0 16px 36px;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Apple Sd Gothic Neo";
+  display: block;
+  margin-bottom: 6px;
+}
+
+.blog {
+  color: #ccc;
+  margin-bottom: 54px;
+}
+
 footer {
   height: 50px;
   background-color: #f1f1f1;
