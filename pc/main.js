@@ -1,5 +1,16 @@
 "use strict";
-document.addEventListener("DOMContentLoaded", () => {
+
+const navBtn = document.querySelector(".nav_btn");
+const navMenu = document.querySelector(".nav_items");
+let isMenu = false;
+navBtn.addEventListener("click", (e) => {
+  //   console.log("gg");
+  e.preventDefault();
+  isMenu = !isMenu;
+  navMenu.style.display = isMenu ? "block" : "none";
+});
+
+document.addEventListener("click", () => {
   const tabs = document.querySelectorAll(".tab");
   const tabPanes = document.querySelectorAll(".section_pane");
 
