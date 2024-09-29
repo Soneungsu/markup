@@ -2,7 +2,7 @@
 
 const navBtn = document.querySelector(".nav_btn");
 const navMenu = document.querySelector(".nav_items");
-let isMenu = false;
+let isMenu = true;
 navBtn.addEventListener("click", (e) => {
   //   console.log("gg");
   e.preventDefault();
