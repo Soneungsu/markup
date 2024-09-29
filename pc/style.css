@@ -106,7 +106,7 @@
   border-radius: 0 10px 10px 0;
   border: none;
   position: relative;
-  top: 20px;
+  top: 94px;
   cursor: pointer;
 }
 main {
@@ -293,6 +293,9 @@ footer p {
 /* MO */
 
 @media (max-width: 640px) {
+  .wrap {
+    min-width: 320px;
+  }
   .nav_items,
   .nav_btn {
     display: none;
