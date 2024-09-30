@@ -19,6 +19,10 @@
     cursor: pointer;
   }
 }
+
+#hamburger_btn {
+  display: none;
+}
 .section_inner {
   display: flex;
 }
@@ -161,7 +165,12 @@ main {
   display: block;
 }
 .section_pane {
+  overflow: auto;
   display: none;
+}
+
+.best_title {
+  margin: 14px 0;
 }
 
 .list_blog li {
@@ -252,6 +261,13 @@ strong {
   display: flex;
   width: 100%;
 }
+
+h6 {
+  margin: 6px 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #a6a8ab;
+}
 .ranking_content {
   width: 50%;
   margin-top: 60px;
@@ -275,6 +291,46 @@ strong {
   width: 50%;
   margin-top: 60px;
 }
+
+.new_blog_wrap {
+  background: #fff;
+  overflow: hidden;
+  margin: 25px 0;
+}
+.domestic_blog,
+.visited {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.domestic_blog li {
+  margin: 6px 4px;
+}
+
+i {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+
+.visited_item {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.visited_item img {
+  margin-right: 12px;
+}
+
+.visited_item p {
+  font-size: 14px;
+  font-weight: bold;
+}
+.banner {
+  margin-top: 68px;
+}
 footer {
   height: 50px;
   background-color: #f1f1f1;
@@ -296,6 +352,44 @@ footer p {
   .wrap {
     min-width: 320px;
   }
+
+  .header {
+    display: block;
+  }
+  h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #hamburger_btn {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+  }
+  .description_wrap {
+    padding: 0;
+  }
+  .nav_items {
+    position: absolute;
+    top: 1px;
+    width: 440px;
+    background: #fff;
+    z-index: 9999;
+  }
+  .close_btn {
+    position: absolute;
+    right: -50px;
+    top: 5px;
+    cursor: pointer;
+    /* color: white; */
+    border: none;
+    background-color: #fff;
+    font-size: 46px;
+    width: 46px;
+    height: 46px;
+  }
   .nav_items,
   .nav_btn {
     display: none;
@@ -314,5 +408,8 @@ footer p {
   }
   .list_story li:nth-child(n + 2) {
     width: 50%;
+  }
+  .txt {
+    border: none;
   }
 }
