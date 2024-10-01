@@ -292,6 +292,7 @@ i {
 }
 .banner_wrap {
   display: flex;
+  justify-content: center;
 }
 .banner_img {
   border-radius: 0;
