@@ -29,7 +29,7 @@ main{padding:0 58px 0 36px;width:100%}#category_img{margin-top:44px;margin-botto
 .tab.active{background-color:#fff;box-sizing:border-box;width:50%;height:48px;padding:2px 0 0;border-top:2px solid #000;border-bottom-color:#fff}
 .wrap_category{padding:0 16px}
 .section_pane.active,.tag_wrap,strong{display:block}
-.section_pane{overflow:auto;display:none}
+.section_pane{overflow:auto;display:none; }
 .banner_wrap,.list_story,.new_blog_wrap,.ranking-list{overflow:hidden}
 .best_title{margin:14px 0}
 .list_blog li{padding:40px 30px;background-color:#fff;border-bottom:2px solid #efeef2;margin-top:10px}
@@ -59,7 +59,7 @@ i{width:15px;height:15px}
 .visited_item{margin:0 10px;display:flex;align-items:center}
 .visited_item img{margin-right:12px}
 .fa-greater-than{margin-left:5px}
-.banner{margin:68px 0 34px}
+.banner{margin:68px 0 34px 0; }
 .banner_wrap{display:flex}
 .banner_img{border-radius:0;margin:0 20px;clip-path:polygon(20px 0,calc(100% - 20px) 0,100% 20px,100% calc(100% - 20px),calc(100% - 20px) 100%,20px 100%,0 calc(100% - 20px),0 20px)}
 footer{height:50px;display:flex;justify-content:center;align-items:center}

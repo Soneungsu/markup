@@ -1,5 +1,6 @@
 "use strict";
 
+// nav버튼 클릭시 보여지고 가려지기
 const navBtn = document.querySelector(".nav_btn");
 const navMenu = document.querySelector(".nav_items");
 let isMenu = true;
@@ -9,6 +10,9 @@ navBtn.addEventListener("click", (e) => {
   isMenu = !isMenu;
   navMenu.style.display = isMenu ? "block" : "none";
 });
+
+
+//해당 탭 버튼 클릭시 active 추가, 
 
 document.addEventListener("click", () => {
   const tabs = document.querySelectorAll(".tab");
