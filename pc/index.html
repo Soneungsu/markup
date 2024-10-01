@@ -16,9 +16,12 @@
   <body>
     <div id="wrapper">
       <!-- 헤더 및 푸터는 화면 로드 시 자동으로 노출 제이쿼리 cdn 사용함 -->
-
       <header class="header" role="banner"></header>
+      <!-- done -->
       <section class="section_inner">
+        <!-- 햄버거 버튼 클릭시 nav_items메뉴 나오고, 뒷배경 검은색으로 주기 -->
+        <div class="overlayout"></div>
+        <!-- done -->
         <aside class="nav_items">
           <nav class="nav_list_items">
             <button class="close_btn">x</button>
@@ -497,31 +500,53 @@
                     </div>
                   </div>
                 </div>
+                <!-- 기본 배너 슬라이드 -->
                 <div class="banner">
                   <div class="banner-wrap">
-                    <img src="" alt="" />
+                    <img
+                      src="../banner/banner.jpg"
+                      alt="배너"
+                      width="594"
+                      height="256"
+                      class="banner_img"
+                    />
                   </div>
                 </div>
+                <!-- 참조 :https://velog.io/@roseis00/%EA%B8%B0%EB%B3%B8css%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EB%B0%B0%EB%84%88-%EB%A7%8C%EB%93%9C%EB%8A%94-%EB%B2%95 -->
               </div>
             </div>
           </article>
         </main>
       </section>
-
+      <!-- 헤더 및 푸터는 화면 로드 시 자동으로 노출 제이쿼리 cdn 사용함 -->
       <footer></footer>
+      <!-- done -->
     </div>
     <script>
       $(() => {
         $("header").load("../include/header.html", () => {
           const hamburgerbtn = document.querySelector("#hamburger_btn");
           const navMenu = document.querySelector(".nav_items");
+          const overlayout = document.querySelector(".overlayout");
+          const clostBtn = document.querySelector(".close_btn");
           let menu = false;
+
           hamburgerbtn.addEventListener("click", (e) => {
             // console.log("gg");
             e.preventDefault();
             menu = !menu;
             navMenu.style.display = menu ? "block" : "none";
             hamburgerbtn.style.display = "none";
+            if (navMenu.style.display === "block") {
+              overlayout.style.display = "block";
+            }
+          });
+
+          clostBtn.addEventListener("click", () => {
+            menu = false;
+            navMenu.style.display = "none";
+            hamburgerbtn.style.display = "block";
+            overlayout.style.display = "none";
           });
         });
         $("footer").load("../include/footer.html");
