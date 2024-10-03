@@ -7,6 +7,10 @@
 .overlayout {
   display: none;
 }
+.blog_img {
+  display: flex;
+  align-items: center;
+}
 .nav_btn,
 i {
   width: 28px;
