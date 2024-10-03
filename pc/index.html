@@ -67,9 +67,11 @@
             </ul>
           </nav>
         </aside>
-        <button class="nav_btn"><span class=""></span></button>
+        <button class="nav_btn">
+          <img src="../image/arrow_icon.png" alt="사이드 메뉴 버튼" />
+        </button>
         <main>
-          <h2>
+          <h2 id="category_wrap">
             <img
               src="../image/category_title.jpeg"
               alt="인기 카테고리"
@@ -114,8 +116,12 @@
                       <div class="description_wrap">
                         <strong>
                           한 달에 5개 이상 포스팅할 정도면.. 블로그 좀 하시는
-                          군요?</strong
-                        >
+                          군요?
+                          <em
+                            ><img
+                              src="../image/new_icon.png"
+                              alt="뉴아이콘" /></em
+                        ></strong>
                         <div class="blog">
                           <span>blog2010 | 키미</span>
                         </div>
@@ -141,8 +147,11 @@
                       <div class="description_wrap">
                         <strong>
                           한 달에 5개 이상 포스팅할 정도면.. 블로그 좀 하시는
-                          군요?</strong
-                        >
+                          군요? 한 달에 5개 포...<em
+                            ><img
+                              src="../image/hot_icon.png"
+                              alt="핫아이콘" /></em
+                        ></strong>
                         <div class="blog">
                           <span>blog2010 | 키미</span>
                         </div>
@@ -393,24 +402,78 @@
                     </h2>
                     <ol class="ranking-list">
                       <li>
-                        1.한 달에 5개 이상 포스팅할 정도면.. 블로그 좀 하시는
-                        군요?
+                        <span>
+                          <span class="number_list">1</span>
+                          <span>한 달에 5개 이상 포스팅할 정도면..</span>
+                        </span>
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
                       </li>
                       <li>
-                        2.한 달에 5개 이상 포스팅할 정도면.. 블로그 좀 하시는
-                        군요?
+                        <span>
+                          <span class="number_list">2</span>
+                          <span>한 달에 5개 이상 포스팅할 정도면..</span>
+                        </span>
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <div class="combined">
+                            <i class="fa-solid fa-star-half"></i>
+                            <i class="fa-solid fa-star star"></i>
+                          </div>
+                          <i class="fa-solid fa-star star"></i>
+                        </span>
                       </li>
                       <li>
-                        3.한 달에 5개 이상 포스팅할 정도면.. 블로그 좀 하시는
-                        군요?
+                        <span>
+                          <span class="number_list">3</span>
+                          <span>한 달에 5개 이상 포스팅할 정도면..</span>
+                        </span>
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <div class="combined">
+                            <i class="fa-solid fa-star-half"></i>
+                            <i class="fa-solid fa-star star"></i>
+                          </div>
+                          <i class="fa-solid fa-star star"></i>
+                          <i class="fa-solid fa-star star"></i>
+                        </span>
                       </li>
                       <li>
-                        4.한 달에 5개 이상 포스팅할 정도면.. 블로그 좀 하시는
-                        군요?
+                        <span>
+                          <span class="number_list">4</span>
+                          <span>한 달에 5개 이상 포스팅할 정도면..</span>
+                        </span>
+                        <span>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star star"></i>
+                          <i class="fa-solid fa-star star"></i>
+                          <i class="fa-solid fa-star star"></i>
+                        </span>
                       </li>
                       <li>
-                        5.한 달에 5개 이상 포스팅할 정도면.. 블로그 좀 하시는
-                        군요?
+                        <span>
+                          <span class="number_list">5</span>
+                          <span>한 달에 5개 이상 포스팅할 정도면..</span>
+                        </span>
+                        <span>
+                          <div class="combined">
+                            <i class="fa-solid fa-star-half"></i>
+                            <i class="fa-solid fa-star star"></i>
+                          </div>
+                          <i class="fa-solid fa-star star"></i>
+                          <i class="fa-solid fa-star star"></i>
+                          <i class="fa-solid fa-star star"></i>
+                          <i class="fa-solid fa-star star"></i>
+                        </span>
                       </li>
                     </ol>
                   </div>
@@ -419,89 +482,93 @@
                       <img src="../image/new_logo.jpg" alt="새로운 블로그" />
                     </h2>
                     <div class="new_blog_wrap">
-                      <h6>#국내여행블로그</h6>
-                      <ul class="domestic_blog">
-                        <li><i class="fa-solid fa-less-than"></i></li>
+                      <div>
+                        <h6>#국내여행블로그</h6>
+                        <ul class="domestic_blog">
+                          <li><i class="fa-solid fa-less-than"></i></li>
 
-                        <li>
-                          <a href="#">
+                          <li>
+                            <a href="#">
+                              <img
+                                src="../blogimg/blog1.jpg"
+                                alt=""
+                                width="66"
+                                height="46"
+                              />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="../blogimg/blog1.jpg"
+                                alt=""
+                                width="66"
+                                height="46px"
+                              />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="../blogimg/blog1.jpg"
+                                alt=""
+                                width="66px"
+                                height="46px"
+                              />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="../blogimg/blog1.jpg"
+                                alt=""
+                                width="66px"
+                                height="46px"
+                              />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="../blogimg/blog1.jpg"
+                                alt=""
+                                width="66"
+                                height="46"
+                              />
+                            </a>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-greater-than"></i>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h6>#100만방문자</h6>
+                        <ul class="visited">
+                          <li>
+                            <i class="fa-solid fa-less-than"></i>
+                          </li>
+                          <li class="visited_item">
                             <img
                               src="../blogimg/blog1.jpg"
                               alt=""
                               width="66"
                               height="46"
                             />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <img
-                              src="../blogimg/blog1.jpg"
-                              alt=""
-                              width="66"
-                              height="46px"
-                            />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <img
-                              src="../blogimg/blog1.jpg"
-                              alt=""
-                              width="66px"
-                              height="46px"
-                            />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <img
-                              src="../blogimg/blog1.jpg"
-                              alt=""
-                              width="66px"
-                              height="46px"
-                            />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
+                            <p>한 달에 5개 이상 포스팅할 정도면..</p>
+                          </li>
+                          <li class="visited_item">
                             <img
                               src="../blogimg/blog1.jpg"
                               alt=""
                               width="66"
                               height="46"
                             />
-                          </a>
-                        </li>
-                        <li>
-                          <i class="fa-solid fa-greater-than"></i>
-                        </li>
-                      </ul>
-                      <h6>#100만방문자</h6>
-                      <ul class="visited">
-                        <li>
-                          <i class="fa-solid fa-less-than"></i>
-                        </li>
-                        <li class="visited_item">
-                          <img
-                            src="../blogimg/blog1.jpg"
-                            alt=""
-                            width="66"
-                            height="46"
-                          />
-                          <p>한 달에 5개 이상 포스팅할 정도면..</p>
-                        </li>
-                        <li class="visited_item">
-                          <img
-                            src="../blogimg/blog1.jpg"
-                            alt=""
-                            width="66"
-                            height="46"
-                          />
-                          <p>한 달에 5개 이상 포스팅할 정도면..</p>
-                        </li>
-                        <li><i class="fa-solid fa-greater-than"></i></li>
-                      </ul>
+                            <p>한 달에 5개 이상 포스팅할 정도면..</p>
+                          </li>
+                          <li><i class="fa-solid fa-greater-than"></i></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -530,6 +597,16 @@
                       class="banner_img"
                     />
                   </div>
+                </div>
+
+                <div class="add_more">
+                  <i class="fa-solid fa-chevron-left left"></i>
+                  <div class="add_more_list_cont">
+                    <div class="add_more_list"></div>
+                    <div class="add_more_list"></div>
+                    <div class="add_more_list"></div>
+                  </div>
+                  <i class="fa-solid fa-chevron-right right"></i>
                 </div>
                 <!-- 참조 :https://velog.io/@roseis00/%EA%B8%B0%EB%B3%B8css%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-%EB%B0%B0%EB%84%88-%EB%A7%8C%EB%93%9C%EB%8A%94-%EB%B2%95 -->
               </div>
