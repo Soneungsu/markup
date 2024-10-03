@@ -536,4 +536,11 @@ footer p {
     background: #57595b;
     cursor: pointer;
   }
+  .banner {
+    padding: 0 16px;
+  }
+
+  .banner_img {
+    width: 100%;
+  }
 }
