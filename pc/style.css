@@ -112,6 +112,6 @@ footer p{font-size:13px;line-height:21px;color:#777;font-family:"Noto Sans CJ Kk
 .visited li:nth-child(n+2) {display: none;}
 .new_blog_wrap {display: flex; align-items: center; overflow: hidden;}
 .new_blog_wrap > div { width: 50% !important;}
-.domestic_blog li a img:first-child {width: 185px !important; height: 100px !important;}
+.domestic_blog li a img:first-child {width: 170px !important; height: 100px !important;}
 
 }
